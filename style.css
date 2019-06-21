@@ -61,7 +61,7 @@ body{
   height: 80%;
   width: 50%;
   border-bottom-left-radius: 25px;
-  background-color: #FFC107;
+  background-color: #FFFF00;
 }
 
 .temperature {
@@ -70,7 +70,7 @@ body{
   top:0%;
   height: 40%;
   width: 50%;
-  background-color: #9C27B0;
+  background-color: #FFFF00;
 }
 
 .humidity {
@@ -80,7 +80,7 @@ body{
   left:50%;
   top:40%;
   border-bottom-right-radius: 25px;
-  background-color: #E91E63;
+  background-color: #FFFF00;
 }
 
 #search-btn {
