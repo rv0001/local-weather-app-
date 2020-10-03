@@ -1,4 +1,4 @@
-const appKey = "395e4562f7e217a19c0f94f68ac81acc";
+const appKey = "395e4562f7e217a19c0f94f68ac81acc";      //apikey to get weather details
 let searchButton = document.getElementById("search-btn");
 let searchInput = document.getElementById("search-txt");
 let cityName = document.getElementById("city-name");
@@ -9,13 +9,13 @@ let humidity = document.getElementById("humidity-div");
 searchButton.addEventListener("click", findWeatherDetails);
 searchInput.addEventListener("keyup", enterPressed);
 
-function enterPressed(event) {
+function enterPressed(event) {        //get location
   if (event.key === "Enter") {
     findWeatherDetails();
   }
 }
 
-function findWeatherDetails() {
+function findWeatherDetails() {                   //get location weather by api
   if (searchInput.value === "") {
 
   }else {
@@ -24,7 +24,7 @@ function findWeatherDetails() {
   }
  }
 
-function theResponse(response) {
+function theResponse(response) {                  //DISPLAY weather result
   let jsonObject = JSON.parse(response);
   cityName.innerHTML = jsonObject.name;
   icon.src = "http://openweathermap.org/img/w/" + jsonObject.weather[0].icon + ".png";
